@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating a Table</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container d-inline-block ms-4" style="width: 40%">
+      <form method="POST" id="form">
+        <div class="form-group mt-3">
+          <label for="#FirstName"><b>First Name</b></label> <br />
+          <input type="text" id="FirstName" class="form-control" required />
+        </div>
+        <div class="form-group mt-3">
+          <label for="#LastName "><b>Last Name</b></label> <br />
+          <input type="text" id="LastName" class="form-control" required />
+        </div>
+        <div class="form-group mt-3">
+          <label for="#Email"><b>E-mail</b></label> <br />
+          <input type="email" id="Email" class="form-control" required />
+        </div>
+        <div>
+          <button class="btn btn-primary mt-3" id="submit" type="submit">
+            Submit
+          </button>
+          <button class="btn btn-warning mt-3" id="reset" type="button">
+            Reset
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      class="container d-inline-block-md mt-3"
+      style="float: right; width: 50%"
+      id="main_div"
+    >
+      <table class="table table-hover table-bordered" id="table">
+        <thead>
+          <tr class="table-dark">
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>E-mail</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+
+      <!-- <div class="jumbotron">Attention!!</div>
+      <div class="dropdown">
+        <button
+          class="btn btn-danger dropdown-toggle"
+          id="food"
+          role="button"
+          data-bs-toggle="dropdown"
+        >
+          Food items
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="food">
+          <li class="dropdown-item">Pizza</li>
+          <li class="dropdown-item"></li>>Maggie</li>
+          <li class="dropdown-item"></li>>Burger</li>
+        </ul>
+      </div> -->
+      <!-- <div class="dropdown show">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Dropdown link
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div> -->
+      <!-- <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          role="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div> --->
+    </div>
+  </body>
+
+  <!-- 
+  <script
+  defer
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+  crossorigin="anonymous"
+></script> -->
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"
+  ></script>
+</html>
