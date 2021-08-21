@@ -42,6 +42,8 @@ function updateTable() {
   <td>${curElement.lastname}</td>
   <td>
    ${curElement.email}
+   </td>
+   <td>
     <button class="btn btn-secondary ms-3 edit btn-sm" >
       Edit
     </button>
